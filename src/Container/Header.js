@@ -1,16 +1,17 @@
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 const Header = () => {
   return(
     <header>
-      <p>Send <span>frieght</span></p>
-      <div>
+      <p>send <span>freight</span></p>
+      <div className="search-box">
         <input type="text" placeholder="search" />
-        <i className='fa fa-search'></i>
+        <FontAwesomeIcon className="search" icon={'search'} title='search' />
       </div>
-      <div>
-        <button>Request Quote</button>
-        <button>Send Shipment</button>
+      <div className='header-btn'>
+        <button className="btn">Request Quote</button>
+        <button className="btn">Send Shipment</button>
       </div>
     </header>
   )
