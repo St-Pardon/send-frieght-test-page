@@ -19,7 +19,16 @@ const Inputs = (props) =>{
         name={props.inputName} 
         value={props.inputValue}
         placeholder={props.placeholder}
+        onFocus={
+          (e)=>{document.getElementById(props.inputId).type = props.inputType}
+        } 
+        onBlur={
+            (e)=>{document.getElementById(props.inputId).type = props.expectedType}
+          }
         />
+        <span 
+          className={props.spanClass2}>{props.spanContent2}
+        </span>
     </label>
   )
 }

@@ -2,7 +2,7 @@ import React from "react";
 import "./style.css";
 import Header from "./Container/Header.js";
 import Service from "./Container/service.js";
-// import Switch from "./components/switch.js";
+import Additional from "./Container/Additional.js";
 import Info from "./Container/Info.js";
 import Details from "./Container/Details.js";
 
@@ -17,6 +17,7 @@ export default function App() {
         <Service />
         <Info />
         <Details />
+        <Additional />
       </form>
     </div>
   );

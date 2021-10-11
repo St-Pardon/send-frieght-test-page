@@ -10,16 +10,18 @@ const Radio =(props)=>{
           id={props.inputId} 
           type="radio" 
           name={props.inputName} 
-          value={props.inputValue} />
+          value={props.inputValue} 
+          checked={props.checked} 
+          onChange={props.handleRadio}/>
         <span 
           className={props.spanClass}>
         {props.spanContent}
-        </span>
         <FontAwesomeIcon 
           className={props.fontClass} 
           icon={props.fontType} 
           title={props.fontTitle} 
           rotation={props.rotate}/>
+        </span>
       </label>
   )
   }
