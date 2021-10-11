@@ -26,7 +26,7 @@ const Service =()=>{
           rotate={270}
           checked={serviceVal === "air freight"}
           handleRadio={handleRadio}
-          />
+        />
         <Radio 
           labelFor="sea" 
           labelClass="service-selection"
@@ -49,7 +49,7 @@ const Service =()=>{
           inputName="service" 
           inputValue="inland"
           spanClass="radio"
-          spanContent = "inland" 
+          spanContent = {"Inland"} 
           fontClass="truck icon" 
           fontType={'truck'} 
           fontTitle='truck' 
@@ -57,18 +57,21 @@ const Service =()=>{
           checked={serviceVal === "inland"}
           handleRadio={handleRadio}
         />
-        <label htmlFor="inland" className="service-selection">
-          <input id="inland" type="radio" name="service" value="Inland" />
-          <span className="radio">Inland
-          <FontAwesomeIcon className="truck icon" icon={'truck'} title='search'/>
-          </span>
-        </label>
-        <label htmlFor="custom" className="service-selection">
-          <input id="custom" type="radio" name="service" value="customs clearance" />
-          <span className="radio">Customs Cleareance
-          <FontAwesomeIcon className="user icon" icon={'user-tie'} title='search'/>
-          </span>
-        </label>
+        <Radio 
+          labelFor="custom" 
+          labelClass="service-selection"
+          inputId="custom"  
+          inputName="service" 
+          inputValue="customs clearance"
+          spanClass="radio"
+          spanContent = "Customs Clearance" 
+          fontClass="user icon" 
+          fontType={'user-tie'} 
+          fontTitle='user-tie' 
+          rotate={0}
+          checked={serviceVal === "customs clearance"}
+          handleRadio={handleRadio}
+        />
       </div>
     </div>
   )

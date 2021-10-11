@@ -11,6 +11,11 @@ html{
   width: 1000px;
   margin: 10px auto;
 }
+.form .back-btn{
+  position: relative;
+  left: -70px;
+  bottom: -26px;
+}
 .form .intro{
   font-size: 1.1rem;
   margin-bottom: 5px;
@@ -47,6 +52,7 @@ header .search-box {
 header input[type='text'] {
   outline: none;
   background-color: inherit;
+  color: #D1E7FF;
   border: none;
   width: 300px;
 }
@@ -153,14 +159,10 @@ header .btn:nth-child(2){
 .import-export{
   background-color: #FCFFFF;
   padding: 10px;
+  color: #686868;
 }
 .info .info-selection:nth-child(1){
   border-right: 1px solid #F1F2F6;
-}
-::-webkit-datetime-edit-year-field:not([aria-valuenow]),
-::-webkit-datetime-edit-month-field:not([aria-valuenow]),
-::-webkit-datetime-edit-day-field:not([aria-valuenow]) {
-    color: transparent;
 }
 .info input[type = radio] {
   opacity: 0;
@@ -202,6 +204,7 @@ header .btn:nth-child(2){
 .info .from-to{
   font-size: 1rem;
   padding: 5px 7px 0 5px;
+  color: #686868;
 }
 .info .select{
   width: 256px;
@@ -222,6 +225,7 @@ header .btn:nth-child(2){
   background-color: #F1F2F6;
   padding: 12px 2px;
   color: #AEB1B6;
+  /* font-weight: 600; */
 }
 .details input[type=radio]:checked + .dimension-details{
   background-color: #FCFFFF;
@@ -284,6 +288,7 @@ header .btn:nth-child(2){
 .additional .additional-radio-div p{
   font-size: 0.9rem;
   margin-top: 5px;
+  color: #A8A9AD;
 }
 .additional .additional-radio-div h5{
   font-size: 1rem;

@@ -1,3 +1,7 @@
-# react-3ebg8f
+# Send Freight Technical Test
 
-[Edit on StackBlitz ⚡️](https://stackblitz.com/edit/react-3ebg8f)
+- template layout implimentation <span style="color:green"> *completed* </span>.
+- separated conponent and container <span style="color:green"> *completed* </span>.
+- optimise input selection <span style="color:green"> *completed* </span>.
+- optimise checkbox and radio selection <span style="color:green"> *completed* </span>.
+- mobile optimization <span style="color:red"> *on going* </span>.

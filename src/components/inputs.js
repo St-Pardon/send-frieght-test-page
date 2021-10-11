@@ -20,7 +20,7 @@ const Inputs = (props) =>{
         value={props.inputValue}
         placeholder={props.placeholder}
         onFocus={
-          (e)=>{document.getElementById(props.inputId).type = props.inputType}
+          (e)=>{document.getElementById(props.inputId).type = props.inputType1}
         } 
         onBlur={
             (e)=>{document.getElementById(props.inputId).type = props.expectedType}

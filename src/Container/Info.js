@@ -8,7 +8,8 @@ class Info extends React.Component {
   constructor(){
     super();
     this.state = {
-      value: ''
+      value: '',
+      isChecked: false
     };
 
     this.handleChange = this.handleChange.bind(this);
@@ -85,7 +86,8 @@ class Info extends React.Component {
         </div>
         <div className="info-second-roll">
         <Inputs 
-            inputType ="date"
+            inputType ="text"
+            inputType1 ="date"
             labelFor="date" 
             labelClass="intercoms"
             inputId="date"  
@@ -117,7 +119,7 @@ class Info extends React.Component {
             labelClass="intercoms"
             inputId="cargo-value"  
             inputName="import-export" 
-            inputValue={this.hhandleChangee}
+            inputValue={this.handleChangee}
             placeholder=""
             spanClass="from-to"
             spanContent = "Total Cargo Value" 

@@ -5,9 +5,13 @@ import Inputs from "../components/inputs.js"
 
 const Details = () => {
   const [radioVal, setRadioVal] = React.useState('total dimention');
+  const [isChecked, setIsChecked] = React.useState(true);
 
   const handleRadio = (e) => {
     setRadioVal(e.target.value)
+  }
+  const handleChecked = () => {
+    setIsChecked(!isChecked)
   }
   return (
     <div className="details">
@@ -77,7 +81,7 @@ const Details = () => {
         </div>
       </div>
       <div className="details-right-div">
-        <Switch />
+        <Switch check={isChecked} handleCheck={handleChecked}/>
         <p>Dangerous Cargo (ex. Chemicals, Battry)</p>
       </div>
     </div>
