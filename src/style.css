@@ -419,33 +419,15 @@ input:checked + .slide:before {
   }
 
   /* haeder styling----------- */
+  header h1{
+    width: 120px;
+  }
   header input[type='text'] {
     width: 88%;
   }
-  header .btn{
-    padding: 5px 10px;
-  }
   header .header-btn{
-    position: absolute;
-    bottom: -1000px;
+    display: none;
   }
-  header .btn{
-    display: inline-block;
-    padding: 5px 15px;
-    border-radius: 3px;
-  }
-  header .btn:nth-child(1){
-    background-color: inherit;
-    color: #D1E7FF;
-    border: 1px solid #D1E7FF;
-    margin: 0 10px 0 0;
-  }
-  header .btn:nth-child(2){
-    background-color: #5AC87F;
-    color: #E9FFF6;
-    border: 1px solid #5AC87F;
-  }
-  
   /* service section styling-------- */
 
   .service-container-div{
@@ -456,7 +438,7 @@ input:checked + .slide:before {
     margin: 0 0 15px 0;
   }
   .services .service-selection{
-    width: 40%;
+    width: 45%;
   }
   /* info section styling ------ */
   
@@ -481,41 +463,5 @@ input:checked + .slide:before {
   }
   .additional .additional-radio-div h5{
     font-size: 0.9rem;
-  }
-}
-@media screen and (max-width: 420px){
-  
-  
-  header .header-btn{
-    position: absolute;
-    bottom: -1200px;
-  }
-  /* service section styling-------- */
-  .services .service-selection{
-    width: -webkit-fill-available;
-    width: 100%;
-  }
-  /* info section styling ------ */
-  .info .destination input{
-    width: fit-content;
-  }
-
-  /* cargo details styling--------- */
-
-  .details .details-right-div p{
-    /* font-size: 0.8rem; */
-    /* width: 100px; */
-    column-gap: 10px;
-  }
-  .details .fieldset-div input{
-    width: 50px;
-  }
-  /* additional details styling ------ */
-  .additional .additional-radio-div p{
-    font-size: 0.5rem;
-
-  }
-  .additional .additional-radio-div h5{
-    font-size: 0.8rem;
   }
 }

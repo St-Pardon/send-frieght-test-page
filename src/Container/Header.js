@@ -1,4 +1,5 @@
 import React from 'react';
+import Button from '../components/Button.js';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 const Header = () => {
@@ -10,8 +11,8 @@ const Header = () => {
         <FontAwesomeIcon className="search" icon={'search'} title='search' />
       </div>
       <div className='header-btn'>
-        <button className="btn">Request Quote</button>
-        <button className="btn">Send Shipment</button>
+        <Button btn="btn" btnVal="Request Quote" />
+        <Button btn="btn" btnVal="Send Shipment" />
       </div>
     </header>
   )
