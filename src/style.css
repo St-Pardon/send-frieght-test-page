@@ -464,12 +464,16 @@ input:checked + .slide:before {
   /* additional details styling ------ */
   .additional .additional-radio-div p{
     font-size: 0.7rem;
+    /* overflow-wrap: break-word; */
   }
   .additional .additional-radio-div h5{
     font-size: 0.8rem;
   }
+  .additional .additional-radio-div div{
+    width: 250px;
+  }
   .additional .add{
-    width: 50px;
+    /* width: 50px; */
   }
 }
 @media screen and (max-width: 420px){
