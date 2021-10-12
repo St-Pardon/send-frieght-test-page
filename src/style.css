@@ -29,6 +29,9 @@ html{
 .form .instruction{
   font-size: 0.6rem;
 }
+.mobileBtn{
+  display: none;
+}
 /* haeder styling----------- */
 header {
   width: 100%;
@@ -417,7 +420,35 @@ input:checked + .slide:before {
   .form .back-btn{
     display: none;
   }
-
+  .mobileBtn{
+    display: block;
+    width: 90%;
+    /* align-items: center; */
+    margin: 0 auto;
+  }
+  .mobileBtn div{
+    display: flex;
+    column-gap: 10px;
+    margin-bottom: 10px;
+  }
+  .btn {
+    display: inline-block;
+    padding: 10px 15px;
+    border-radius: 3px;
+  }
+  .quote, .back{
+    width: 50%;
+    background-color: #0746A7;
+    color: #D1E7FF;
+    border: none;
+  }
+  .shipment{
+    width: 100%;
+    background-color: #5AC87F;
+    color: #E9FFF6;
+    border: 1px solid #5AC87F;
+    margin-bottom: 20px;
+  }
   /* haeder styling----------- */
   header h1{
     width: 130px;

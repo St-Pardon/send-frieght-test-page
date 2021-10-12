@@ -3,7 +3,7 @@ import Switch from "../components/switch.js";
 
 const Additional = () =>{
   return(
-    <div className="additional" style={{marginBottom: "30px"}}>
+    <div className="additional">
       <div className="additional-first-roll">
         <div className="additional-radio-div">
           <Switch className="switch add" />
