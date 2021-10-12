@@ -7,6 +7,12 @@ html{
   font-size: 18px;
   background-color: #F1F2F6;
 }
+/* Hide default HTML checkbox & Radio  */
+.switch input, .services input, .info input[type = radio], .details input[type = radio]{
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
 .form{
   width: 1000px;
   margin: 10px auto;
@@ -32,12 +38,13 @@ header {
   justify-content: space-evenly;
   align-items: center;
 }
-header p{
+header h1{
   color: #D1E7FF;
   font-size: 1.4rem;
+  font-weight: 500;
   width: 200px;
 }
-header p span{
+header h1 span{
   font-size: 0.8rem;
   text-transform: uppercase;
 }
@@ -104,11 +111,6 @@ header .btn:nth-child(2){
   border: 1px solid #D1E7FF;
   overflow: hidden;
 }
-.services input{
-  opacity: 0;
-  width: 0;
-  height: 0;
-}
 .services .radio{
   position: absolute;
   top: 0;
@@ -164,11 +166,7 @@ header .btn:nth-child(2){
 .info .info-selection:nth-child(1){
   border-right: 1px solid #F1F2F6;
 }
-.info input[type = radio] {
-  opacity: 0;
-  width: 0;
-  height: 0;
-}
+
 .info input[type=radio]:checked + .import-export{
   background-color: #09469F;
   color: #F1F2F6;
@@ -178,14 +176,7 @@ header .btn:nth-child(2){
   background: #F1F2F6;
   width: 40%;
 }
-.info .destination input, .details .fieldset-div input{
-  outline: none;
-  border: none;
-  background: inherit;
-  height: 45px;
-  /* width: 80%; */
-}
-.info .info-second-roll input, .info select{
+.info .destination input, .details .fieldset-div input, .info .info-second-roll input, .info select{
   outline: none;
   border: none;
   background: inherit;
@@ -195,7 +186,6 @@ header .btn:nth-child(2){
 .info .intercoms{
   display: inline-block;
   background: #F1F2F6;
-  /* width: 30%; */
 }
 .info .pin{
   font-size: 1rem;
@@ -213,7 +203,6 @@ header .btn:nth-child(2){
   width: 60%;
 }
 
-
 /* cargo details styling--------- */
 .details{
   display: flex;
@@ -225,7 +214,6 @@ header .btn:nth-child(2){
   background-color: #F1F2F6;
   padding: 12px 2px;
   color: #AEB1B6;
-  /* font-weight: 600; */
 }
 .details input[type=radio]:checked + .dimension-details{
   background-color: #FCFFFF;
@@ -233,13 +221,8 @@ header .btn:nth-child(2){
 }
 .details .dimension-details{
   padding: 10px;
-  /* background-color: #FCFFFF; */
 }
-.details input[type = radio] {
-  opacity: 0;
-  width: 0;
-  height: 0;
-}
+
 .details .details-right-div{
   display: flex;
 }
@@ -274,7 +257,6 @@ header .btn:nth-child(2){
 /* additional details styling ------ */
 .additional{
   display: flex;
-  /* flex-direction: column; */
   justify-content: space-between;
 }
 
@@ -302,13 +284,6 @@ header .btn:nth-child(2){
   width: 38px;
   height: 22px;
   margin: 10px 0 0 0;
-}
-
-/* Hide default HTML checkbox */
-.switch input {
-  opacity: 0;
-  width: 0;
-  height: 0;
 }
 
 /* The slider */
@@ -350,4 +325,88 @@ input:checked + .slide:before {
   -webkit-transform: translateX(16px);
   -ms-transform: translateX(16px);
   transform: translateX(16px);
+}
+
+
+
+
+
+
+/* tablet optimization------ */
+
+@media screen and (max-width: 800px){
+  .form{
+    width: 80%;
+  }
+  .form .back-btn{
+    left: -50px;
+  }
+
+  /* haeder styling----------- */
+
+  header h1{
+  
+  }
+  .search {
+    color: #d1e7ff;
+  }
+  header input[type='text'] {
+    width: 88%;
+  }
+  header .btn{
+    padding: 5px 10px;
+  }
+  
+  /* service section styling-------- */
+
+  .service-container-div{
+    flex-wrap: wrap;
+    margin-bottom: 0;
+  }
+  .services .service-selection{
+    margin: 0 0 15px 0;
+  }
+
+  /* info section styling ------ */
+  .info .info-first-roll, .info .info-second-roll{
+    flex-wrap:wrap ;
+    margin: 0;
+  }
+  .info .info-selection{
+    margin-bottom: 15px;
+  }  
+  .info .destination {
+    width: 100%;
+    margin: 0 0 15px 0;
+  }
+  .info .destination input{
+    width: 80%;
+  }
+  .info .intercoms{
+    margin: 0 0 15px 0;
+    width: 100%;
+  }
+  .info select{
+    width: 80%;
+  }
+
+  /* cargo details styling--------- */
+  .details{
+    flex-direction: column;
+    row-gap: 20px;
+  }
+
+  .details .details-right-div p{
+    margin: 10px 0 0 7px ;
+  }
+  .details .details-left-div{
+    row-gap: 20px;
+  }
+  
+  /* additional details styling ------ */
+  .additional{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }  
 }

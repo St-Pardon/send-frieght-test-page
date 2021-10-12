@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 const Header = () => {
   return(
     <header>
-      <p>send <span>freight</span></p>
+      <h1>send <span>freight</span></h1>
       <div className="search-box">
         <input type="text" placeholder="search" />
         <FontAwesomeIcon className="search" icon={'search'} title='search' />
