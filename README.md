@@ -4,4 +4,4 @@
 - separated conponent and container <span style="color:green"> *completed✅* </span>.
 - optimise input selection <span style="color:green"> *completed✅* </span>.
 - optimise checkbox and radio selection <span style="color:green"> *completed✅* </span>.
-- mobile optimization <span style="color:red"> *on going❌* </span>.
+- mobile optimization <span style="color:green"> *completed✅* </span>.
