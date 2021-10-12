@@ -452,14 +452,14 @@ input:checked + .slide:before {
   
   /* cargo details styling--------- */
   .details .fieldset-div input{
-
     width: 70px;
   }
   .details .details-right-div p{
     font-size: 0.9rem;
+    width: 250px;
   }
   .details .add-switch{
-    width: 50px;
+    /* width: 50px; */
   }
   /* additional details styling ------ */
   .additional .additional-radio-div p{
@@ -471,9 +471,6 @@ input:checked + .slide:before {
   }
   .additional .additional-radio-div div{
     width: 250px;
-  }
-  .additional .add{
-    /* width: 50px; */
   }
 }
 @media screen and (max-width: 420px){
