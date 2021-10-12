@@ -459,17 +459,17 @@ input:checked + .slide:before {
     width: 40%;
   }
   /* info section styling ------ */
-
-
+  
+  
   .info .destination input{
     width: 70%;
   }
   .info select{
     width: 70%;
   }
-
+  
   /* cargo details styling--------- */
-
+  
   .details .details-right-div p{
     font-size: 0.9rem;
   }
@@ -484,8 +484,12 @@ input:checked + .slide:before {
   }
 }
 @media screen and (max-width: 420px){
-
   
+  
+  header .header-btn{
+    position: absolute;
+    bottom: -1200px;
+  }
   /* service section styling-------- */
   .services .service-selection{
     width: -webkit-fill-available;
@@ -499,7 +503,9 @@ input:checked + .slide:before {
   /* cargo details styling--------- */
 
   .details .details-right-div p{
-    font-size: 0.8rem;
+    /* font-size: 0.8rem; */
+    /* width: 100px; */
+    column-gap: 10px;
   }
   .details .fieldset-div input{
     width: 50px;
