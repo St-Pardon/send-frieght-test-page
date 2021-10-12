@@ -334,7 +334,7 @@ input:checked + .slide:before {
 
 /* tablet optimization------ */
 
-@media screen and (max-width: 800px){
+@media screen and (max-width: 850px){
   .form{
     width: 80%;
   }
@@ -344,12 +344,6 @@ input:checked + .slide:before {
 
   /* haeder styling----------- */
 
-  header h1{
-  
-  }
-  .search {
-    color: #d1e7ff;
-  }
   header input[type='text'] {
     width: 88%;
   }
@@ -373,7 +367,7 @@ input:checked + .slide:before {
     margin: 0;
   }
   .info .info-selection{
-    margin-bottom: 15px;
+    margin: 15px 0;
   }  
   .info .destination {
     width: 100%;
@@ -409,4 +403,113 @@ input:checked + .slide:before {
     flex-wrap: wrap;
     justify-content: space-between;
   }  
+}
+
+
+
+
+/* mobile optimization ------ */
+
+@media screen and (max-width: 600px){
+  .form{
+    width: 90%;
+  }
+  .form .back-btn{
+    display: none;
+  }
+
+  /* haeder styling----------- */
+  header input[type='text'] {
+    width: 88%;
+  }
+  header .btn{
+    padding: 5px 10px;
+  }
+  header .header-btn{
+    position: absolute;
+    bottom: -1000px;
+  }
+  header .btn{
+    display: inline-block;
+    padding: 5px 15px;
+    border-radius: 3px;
+  }
+  header .btn:nth-child(1){
+    background-color: inherit;
+    color: #D1E7FF;
+    border: 1px solid #D1E7FF;
+    margin: 0 10px 0 0;
+  }
+  header .btn:nth-child(2){
+    background-color: #5AC87F;
+    color: #E9FFF6;
+    border: 1px solid #5AC87F;
+  }
+  
+  /* service section styling-------- */
+
+  .service-container-div{
+    flex-wrap: wrap;
+    margin-bottom: 0;
+  }
+  .services .service-selection{
+    margin: 0 0 15px 0;
+  }
+  .services .service-selection{
+    width: 40%;
+  }
+  /* info section styling ------ */
+
+
+  .info .destination input{
+    width: 70%;
+  }
+  .info select{
+    width: 70%;
+  }
+
+  /* cargo details styling--------- */
+
+  .details .details-right-div p{
+    font-size: 0.9rem;
+  }
+  
+  /* additional details styling ------ */
+  .additional .additional-radio-div p{
+    font-size: 0.8rem;
+
+  }
+  .additional .additional-radio-div h5{
+    font-size: 0.9rem;
+  }
+}
+@media screen and (max-width: 420px){
+
+  
+  /* service section styling-------- */
+  .services .service-selection{
+    width: -webkit-fill-available;
+    width: 100%;
+  }
+  /* info section styling ------ */
+  .info .destination input{
+    width: fit-content;
+  }
+
+  /* cargo details styling--------- */
+
+  .details .details-right-div p{
+    font-size: 0.8rem;
+  }
+  .details .fieldset-div input{
+    width: 50px;
+  }
+  /* additional details styling ------ */
+  .additional .additional-radio-div p{
+    font-size: 0.5rem;
+
+  }
+  .additional .additional-radio-div h5{
+    font-size: 0.8rem;
+  }
 }
