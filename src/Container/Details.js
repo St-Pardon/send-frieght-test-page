@@ -81,7 +81,7 @@ const Details = () => {
         </div>
       </div>
       <div className="details-right-div">
-        <Switch check={isChecked} handleCheck={handleChecked}/>
+        <Switch className="switch add-switch" check={isChecked} handleCheck={handleChecked}/>
         <p>Dangerous Cargo (ex. Chemicals, Battry)</p>
       </div>
     </div>

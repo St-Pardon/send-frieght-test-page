@@ -420,7 +420,7 @@ input:checked + .slide:before {
 
   /* haeder styling----------- */
   header h1{
-    width: 120px;
+    width: 130px;
   }
   header input[type='text'] {
     width: 88%;
@@ -451,17 +451,54 @@ input:checked + .slide:before {
   }
   
   /* cargo details styling--------- */
-  
+  .details .fieldset-div input{
+
+    width: 70px;
+  }
   .details .details-right-div p{
     font-size: 0.9rem;
   }
-  
+  .details .add-switch{
+    width: 50px;
+  }
   /* additional details styling ------ */
   .additional .additional-radio-div p{
+    font-size: 0.7rem;
+  }
+  .additional .additional-radio-div h5{
     font-size: 0.8rem;
+  }
+  .additional .add{
+    width: 50px;
+  }
+}
+@media screen and (max-width: 420px){
+  /* service section styling-------- */
+  .services .service-selection{
+    width: -webkit-fill-available;
+    width: 100%;
+  }
+  /* info section styling ------ */
+  .info .destination input{
+    width: fit-content;
+  }
+
+  /* cargo details styling--------- */
+
+  .details .details-right-div p{
+    /* font-size: 0.8rem; */
+    /* width: 100px; */
+    column-gap: 10px;
+  }
+  .details .fieldset-div input{
+    width: 50px;
+  }
+  /* additional details styling ------ */
+  .additional .additional-radio-div p{
+    font-size: 0.5rem;
 
   }
   .additional .additional-radio-div h5{
-    font-size: 0.9rem;
+    font-size: 0.8rem;
   }
 }
